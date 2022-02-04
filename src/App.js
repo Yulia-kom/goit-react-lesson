@@ -7,10 +7,12 @@ const navLinks = [
   {
     href: "/университет",
     text: "университет",
+    icon: HiFire,
   },
   {
     href: "/факультет",
     text: "факультет",
+    icon: HiPaperClip,
   },
 ];
 
