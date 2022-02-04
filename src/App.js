@@ -1,4 +1,7 @@
-import AppBar from "./components/AppBar";
+import AppBar from "./components/AppBar/AppBar";
+import Navigation from "./components/Navigation/Navigation";
+import UserMenu from "./components/UserMenu/UserMenu";
+
 
 const navLinks = [
   {
@@ -13,7 +16,15 @@ const navLinks = [
 
 
 function App() {
-  return <AppBar links={navLinks}/>;
+  return (
+    <AppBar>
+     {{
+        navigation: <Navigation links={navLinks}/>,
+        userMenu: <UserMenu/>, 
+      }}
+   
+    </AppBar>
+  );
 }
 
 export default App;
