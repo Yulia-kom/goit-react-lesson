@@ -1,13 +1,13 @@
 import React from "react";
-import { IconBox } from "./NavigationItem.styles";
+import {Link, IconBox, Text } from "./NavigationItem.styles";
 
-const NavigationItem = () =>{
+const NavigationItem = (link) =>{
     return (
-    <Link href={href}>
+    <Link href={link.href}>
         <IconBox>
             <Icon color="green" size="30"/>
         </IconBox>
-        <Text>{text}</Text>
+        <Text>{link.text}</Text>
     </Link>
     );
 };
